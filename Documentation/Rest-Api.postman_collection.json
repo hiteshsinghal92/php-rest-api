@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "fa399049-335c-4284-ad0f-eccfa4f71a17",
+		"name": "Rest-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"department_name\":\"IThh\",\r\n   \"status\":2\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost/php-rest-api/backend/web/department/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"php-rest-api",
+								"backend",
+								"web",
+								"department",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"department\" : \"All\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/php-rest-api/backend/web/department/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"php-rest-api",
+								"backend",
+								"web",
+								"department",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"department_name\":\"ITCode\",\r\n   \"status\":2,\r\n   \"department_id\":1\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost/php-rest-api/backend/web/department/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"php-rest-api",
+								"backend",
+								"web",
+								"department",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"department_id\" : 1\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/php-rest-api/backend/web/department/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"php-rest-api",
+								"backend",
+								"web",
+								"department",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"employee_code\":\"0004\",\r\n   \"employee_name\":\"hites\",\r\n   \"employee_email\": \"hitesdsdhsinghal92dsd@gmail.com\",\r\n   \"status\" : \"1\",\r\n   \"department_id\" : 2,\r\n   \"address\" : [\r\n   {\"phone\":9785958712,\"address\":\"sas\"},\r\n   {\"phone\":9785958712,\"address\":\"sasasas\"}\r\n   ]\r\n   \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/php-rest-api/backend/web/employee/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"php-rest-api",
+								"backend",
+								"web",
+								"employee",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"employee\" : \"All\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/php-rest-api/backend/web/employee/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"php-rest-api",
+								"backend",
+								"web",
+								"employee",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_id\" :1,\r\n   \"employee_code\":\"0004\",\r\n   \"employee_name\":\"hites\",\r\n   \"employee_email\": \"hitesdsdhsinghal92dsd@gmail.com\",\r\n   \"status\" : \"1\",\r\n   \"department_id\" : 2,\r\n   \"address\" : [\r\n   {\"phone\":9785958712,\"address\":\"pankajs\",\"id\":1},\r\n   {\"phone\":9785958712,\"address\":\"radhe\",\"id\":2}\r\n   ]\r\n   \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/php-rest-api/backend/web/employee/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"php-rest-api",
+								"backend",
+								"web",
+								"employee",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"employee_id\" : 4\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/php-rest-api/backend/web/employee/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"php-rest-api",
+								"backend",
+								"web",
+								"employee",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
