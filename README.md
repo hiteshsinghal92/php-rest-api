@@ -59,7 +59,7 @@ vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
 
-
+use INIT command.
 Use composer update
 Import Db in folder/Documentation and update Configration database. (common/config/main-local.php)
 Post man Json file in Documentation impoer in postman.
